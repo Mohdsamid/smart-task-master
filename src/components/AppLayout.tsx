@@ -26,9 +26,10 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
   }, [user, loading, navigate]);
 
   useEffect(() => {
-    const stored = localStorage.getItem("theme") === "dark";
-    setDark(stored);
-    document.documentElement.classList.toggle("dark", stored);
+    const saved = localStorage.getItem("theme");
+    const isDark = saved ? saved === "dark" : true;
+    setDark(isDark);
+    document.documentElement.classList.toggle("dark", isDark);
   }, []);
 
   useEffect(() => {

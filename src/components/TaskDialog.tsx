@@ -45,7 +45,10 @@ export const TaskDialog = ({ open, onOpenChange, task, onSaved }: Props) => {
       setIsHabit(task.is_habit);
       setAutoPrio(false);
     } else {
-      setTitle(""); setDescription(""); setDeadline(""); setPriority("low");
+      const now = new Date();
+      now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+      const defaultDeadline = now.toISOString().slice(0, 16);
+      setTitle(""); setDescription(""); setDeadline(defaultDeadline); setPriority("high");
       setCategory("personal"); setIsHabit(false); setAutoPrio(true);
     }
   }, [task, open]);
