@@ -186,7 +186,7 @@ const Index = () => {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-soft text-primary text-sm font-medium mb-3">
                 <Code2 className="w-3.5 h-3.5" /> About the developer
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-2">Built by a BCA student</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-2">Built by Shashwat Jain & Mohammad Aamir Farhan</h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 SmartTask is a final-year project crafted by a <span className="text-foreground font-medium">BCA 6th Semester</span> student
                 at <span className="text-foreground font-medium">IPS College, Chhindwara (M.P.)</span>. Designed and developed end-to-end —
@@ -240,13 +240,23 @@ const Index = () => {
               <li><a href="#" className="hover:text-foreground transition-base">Features</a></li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold text-sm mb-3">Developer</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2"><GraduationCap className="w-4 h-4" /> BCA 6th Sem</li>
-              <li className="flex items-center gap-2"><Code2 className="w-4 h-4" /> IPS College, Chhindwara</li>
-              <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> Madhya Pradesh, India</li>
-            </ul>
+                    <div>
+            <h3 className="mb-3 text-sm font-semibold text-foreground">Developer</h3>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <div>
+                <p className="font-medium text-foreground">Shashwat Jain</p>
+                <p className="text-xs">Developer</p>
+              </div>
+              <div>
+                <p className="font-medium text-foreground">Mohammad Aamir Farhan</p>
+                <p className="text-xs">Developer</p>
+              </div>
+              <p className="flex items-center gap-1.5 pt-1">
+                <GraduationCap className="h-4 w-4" />
+                BCA — 6th Semester
+              </p>
+              <p>IPS College, Chhindwara</p>
+            </div>
           </div>
         </div>
         <div className="border-t border-border/50">
